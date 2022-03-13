@@ -1,2 +1,2 @@
 #!/bin/bash
-gc unlink $CFILE.c
+gcc -S $CFILE
