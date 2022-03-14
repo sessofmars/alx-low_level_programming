@@ -1,10 +1,24 @@
- #include <studio.h>
-/**
- * main - entry point
- * return: 0 if exited properly, non-zero otherwise
- *
-int main(void)
-{
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+
+	//initializing strings
+	char str[] = "Programming is like a multilingual puzzle";
+
+	//writing to stdout
+	puts(str);
+
+	return 0;
 }
+
+	
+
+
+
+
+
+
+
+
+
