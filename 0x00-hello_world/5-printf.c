@@ -2,7 +2,7 @@
 
 /**
 * main - entry point
-* Description - print script
+
 * Return - Always 0 if successful
 */
 int main(void)
