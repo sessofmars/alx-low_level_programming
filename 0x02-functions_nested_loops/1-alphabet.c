@@ -1,20 +1,20 @@
-#include <stdio>
 #include "main.h"
-
 /**
- * print_alphabet - prints the alphabets, in lowercase, followed by a new line
+ * print_alphabet - print lowercase alphabets
+ *
+ * Return: success 0
  */
 void print_alphabet(void)
 {
-	char ch;
+	int a = 97;
 
-	ch = 'a';
+	int count = 1;
 
-	while (ch <= 'z')
+	while (count <= 26)
 	{
-		_putchar(ch);
-		ch++;
+		_putchar(a);
+		a++;
+		count++;
 	}
-	
 	_putchar('\n');
 }
