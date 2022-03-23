@@ -11,6 +11,7 @@ void rev_string(char *s)
 
 	char *str, temp;
 	while (count >= 0)
+
 	{
 		if (s[count] == '\0')
 			break;
