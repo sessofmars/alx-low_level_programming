@@ -9,12 +9,12 @@
  * Return: void.
  */
 
-void modif_my_param(int *n)
+int main(void)
 {
-   printf("Value of 'n': %p\n", n);
-   printf("Address of 'n': %p\n", &n);
-   *n = 98;
-	
+	int n;
 
-    return (void);
+	n = 98;
+	modif_my_param(n);
+
+       return (void);
 }
