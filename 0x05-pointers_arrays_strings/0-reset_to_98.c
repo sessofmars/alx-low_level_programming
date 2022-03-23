@@ -6,7 +6,7 @@
  * as parameter and updates the value it points
  * to 98.
  *
- * Return: Always 0.
+ * Return: void.
  */
 
 void modif_my_param(int *n)
@@ -16,5 +16,5 @@ void modif_my_param(int *n)
    *n = 98;
 	
 
-    return (0);
+    return (void);
 }
