@@ -1,35 +1,25 @@
 #include "main.h"
-#include <string.h>
 
 /**
- * main - concatenate two strings.
- * @s1: first character.
- * @s2: second character.
- *
- * Return: (void)
- *
+ * _strcat - concatenate two strings
+ * @dest: char string to concatenate to
+ * @src: char string
+ * Return: pointer to resulting string `dest`
  */
-
 
 char *_strcat(char *dest, char *src)
 {
-    char str1[MAX_SIZE], str2[MAX_SIZE];
-    char * s1 = str1;
-    char * s2 = str2;
+	int i, c;
 
-    /* Input two strings from user */
-    printf("Enter first string: ");
-    gets(str1);
-    printf("Enter second string: ");
-    gets(str2);
+	for (i = 0; dest[i] != '\0'; i++)
+		;
 
-    /* Move till the end of str1 */
-    while(*(++s1));
+	for (c = 0; src[c] != '\0'; c++)
+	{
+		dest[i] = src[c];
+		i++;
+	}
 
-    /* Copy str2 to str1 */
-    while(*(s1++) = *(s2++));
-
-    printf("Concatenated string = %s", str1);
-
-    return 0;
-}
+	dest[i] = '\0';
+	return (dest);
+}:
