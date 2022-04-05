@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main ()
+{
+
+	int x = 2 + 1 + 4 / (3 + 2)
+	return 0;
+}
