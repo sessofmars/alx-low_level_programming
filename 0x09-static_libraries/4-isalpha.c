@@ -1,4 +1,3 @@
-#!/bin/bash
 #include "main.h"
 /**
  * _isalpha - a function that checks for alphabetic character
