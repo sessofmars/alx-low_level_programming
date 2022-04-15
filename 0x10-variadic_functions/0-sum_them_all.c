@@ -9,19 +9,19 @@
  */
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list valist; //holds information needed by other macros.
-	unsigned int i; //declaration of int i
-	int sum = 0; //initialisation
+	va_list valist;
+	unsigned int i;
+	int sum = 0;
 
-	if (n == 0) //conditional statement
+	if (n == 0)
 		return (0);
 
-	va_start(valist, n); //access to variadic function enabled
+	va_start(valist, n);
 
-	for (i = 0; i < n; i++) //for loop
-		sum += va_arg(valist, int); //access to next variadic function enabled.
+	for (i = 0; i < n; i++)
+		sum += va_arg(valist, int);
 
-	va_end(valist); //ends traversal of variadic function
+	va_end(valist);
 
 	return (sum);
 }
