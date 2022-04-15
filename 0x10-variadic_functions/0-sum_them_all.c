@@ -1,10 +1,11 @@
-#include <stdarg.h>
-#include <stdio.h>
+#include <variadic_functions.h>
 
 /**
  * main - a function that returns the sum of all it's parameters.
  *
- * return: 0
+ *@n: amount of the arguments
+ *
+ * return: sum of its parameters
  */
 int sum_them_all(const unsigned int n, ...)
 {
